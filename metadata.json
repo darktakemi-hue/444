@@ -1,0 +1,6 @@
+{
+  "name": "DriveFair",
+  "description": "Aplicativo de mobilidade justa com simulação de passageiro e motorista, taxas competitivas e gestão transparente de ganhos em tempo real.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

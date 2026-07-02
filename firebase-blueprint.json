@@ -1,0 +1,57 @@
+{
+  "collections": {
+    "simulations": {
+      "description": "Stores the complete real-time state of a user's DriveFair simulation",
+      "fields": {
+        "simulationId": {
+          "type": "string",
+          "description": "Unique identifier for this simulation session"
+        },
+        "driverStats": {
+          "type": "map",
+          "description": "Earnings, rating, acceptance rate, and wallet balance"
+        },
+        "passengerStats": {
+          "type": "map",
+          "description": "Rating, trips count, loyalty points, and total spent"
+        },
+        "activeTrip": {
+          "type": "map",
+          "description": "Current active trip object, or null"
+        },
+        "completedTrips": {
+          "type": "array",
+          "description": "List of completed trips with ratings and review tags"
+        },
+        "cashoutHistory": {
+          "type": "array",
+          "description": "Mobile transfer cashout transactions history"
+        },
+        "redemptionHistory": {
+          "type": "array",
+          "description": "Loyalty points reward redemptions history"
+        },
+        "scheduledRides": {
+          "type": "array",
+          "description": "Scheduled future rides"
+        },
+        "activeDiscount": {
+          "type": "number",
+          "description": "Active discount percentage"
+        },
+        "pendingPassengerRating": {
+          "type": "map",
+          "description": "A trip waiting for passenger's rating"
+        },
+        "pendingDriverRating": {
+          "type": "map",
+          "description": "A trip waiting for driver's rating"
+        },
+        "updatedAt": {
+          "type": "timestamp",
+          "description": "Timestamp of the last state modification"
+        }
+      }
+    }
+  }
+}
